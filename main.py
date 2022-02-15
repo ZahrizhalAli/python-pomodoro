@@ -1,12 +1,12 @@
 import tkinter
 import math
-# ---------------------------- CONSTANTS ------------------------------- #
+# ---------------------------- VARIABEL ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
-WORK_MIN = 25
+WORK_MIN = 50
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
@@ -14,7 +14,7 @@ status = "Timer"
 timer = None
 time_start = "00:00"
 checkmarks = ""
-# ---------------------------- TIMER RESET ------------------------------- # 
+# ---------------------------- RESET TIMER ------------------------------- #
 
 
 def reset_timer():
@@ -83,7 +83,7 @@ my_label.grid(column=1, row=0)
 
 canvas = tkinter.Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
 tomato_img = tkinter.PhotoImage(file="tomato.png")  # variable for photo file
-canvas.create_image(100, 112, image=tomato_img )  # x, y, img
+canvas.create_image(100, 112, image=tomato_img)  # x, y, img
 timer_text = canvas.create_text(100, 130, text=f"{time_start}", fill="white", font=(FONT_NAME, 35, "bold"))
 canvas.grid(column=1, row=1)
 
