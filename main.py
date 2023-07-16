@@ -73,7 +73,7 @@ def count_down(count):
 
 
 window = tkinter.Tk()
-window.title("Pomodoro")
+window.title("Pomodoro Timer")
 window.config(padx=100, pady=60, bg=YELLOW)
 
 # Label
